@@ -12,7 +12,7 @@ function addBuddy () {
 
     $.ajax({
             type: "POST",
-            url: "http://localhost:8080/addbuddyinfo",
+            url: "/addbuddyinfo",
             data: JSON.stringify(sendInfo),
             contentType: "application/json; charset=utf-8",
     }).then(function(data) {
@@ -40,7 +40,7 @@ function createBook () {
 
     $.ajax({
             type: "POST",
-            url: "http://localhost:8080/addressbook",
+            url: "/addressbook",
             data: JSON.stringify(sendInfo),
             contentType: "application/json; charset=utf-8",
     }).then(function(data) {
