@@ -31,7 +31,7 @@ GET http://localhost:8080/buddyinfo
 
 ###
 
-# curl -i -H "Accept: application/xml" -H "Content-Type:application/json" -X POST --data "{\"bookID\": \"1\", \"buddy\": {\"name\": \"Test name 1\", \"address\": \"Test address\", \"phoneNumber\": \"6131230987\"}}" http://localhost:8080/testAdding
+# curl -i -H "Accept: application/xml" -H "Content-Type:application/json" -X POST --data "{\"bookID\": \"1\", \"buddy\": {\"name\": \"Test name 1\", \"address\": \"Test address\", \"phoneNumber\": \"6131230987\"}}" http://localhost:8080/addbuddyinfo
 POST http://localhost:8080/addbuddyinfo
 Accept: application/xml
 Content-Type: application/json
