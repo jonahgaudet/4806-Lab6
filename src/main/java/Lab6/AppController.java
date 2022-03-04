@@ -18,6 +18,11 @@ public class AppController {
         this.buddyInfoRepository = buddyInfoRepository;
     }
 
+    @GetMapping("/")
+    public String defaultPage(Model model) {
+        return addressbook(model);
+    }
+
     @GetMapping("/addressbookview")
     public String addressbook(Model model) {
         model.addAttribute("addressbook", new AddressBook());
