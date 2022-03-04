@@ -1,0 +1,49 @@
+# curl -i -H "Content-Type:application/json" -d "{\"name\": \"My address book\"}" http://localhost:8080/addressbook
+POST http://localhost:8080/addressbook
+Content-Type: application/json
+
+{
+  "name": "My address book"
+}
+
+###
+
+# curl http://localhost:8080/addressbook
+GET http://localhost:8080/addressbook
+
+###
+
+
+# curl -i -H "Content-Type:application/json" -d "{\"name\": \"Jonah Gaudet\", \"address\": \"123 Main St\", \"phoneNumber\": \"6131234567\"}" http://localhost:8080/buddyinfo
+POST http://localhost:8080/buddyinfo
+Content-Type: application/json
+
+{
+  "name": "Jonah Gaudet",
+  "address": "123 Main St",
+  "phoneNumber": "6131234567"
+}
+
+###
+
+# curl http://localhost:8080/buddyinfo
+GET http://localhost:8080/buddyinfo
+
+###
+
+# curl -i -H "Accept: application/xml" -H "Content-Type:application/json" -X POST --data "{\"bookID\": \"1\", \"buddy\": {\"name\": \"Test name 1\", \"address\": \"Test address\", \"phoneNumber\": \"6131230987\"}}" http://localhost:8080/testAdding
+POST http://localhost:8080/addbuddyinfo
+Accept: application/xml
+Content-Type: application/json
+
+{
+  "bookID": "1",
+  "buddy": {
+    "name": "Test name 1",
+    "address": "Test address",
+    "phoneNumber": "6131230987"
+  }
+}
+
+###
+
